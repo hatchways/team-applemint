@@ -8,7 +8,6 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
   submit: {
-    padding: theme.spacing(2),
     height: 56,
   },
 }));
