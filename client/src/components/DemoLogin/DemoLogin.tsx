@@ -3,14 +3,7 @@ import Box from '@mui/material/Box';
 import login from '../../helpers/APICalls/login';
 import { useAuth } from '../../context/useAuthContext';
 import { useSnackBar } from '../../context/useSnackbarContext';
-import { Theme } from '@mui/material/styles';
-import { makeStyles } from '@mui/styles';
-
-const useStyles = makeStyles((theme: Theme) => ({
-  submit: {
-    height: 56,
-  },
-}));
+import { useStyles } from './useStyles';
 
 export default function DemoLogin(): JSX.Element {
   const classes = useStyles();
