@@ -3,6 +3,7 @@ import register from '../../helpers/APICalls/register';
 import SignUpForm from './SignUpForm/SignUpForm';
 import { useAuth } from '../../context/useAuthContext';
 import { useSnackBar } from '../../context/useSnackbarContext';
+import DemoLogin from '../../components/DemoLogin/DemoLogin';
 import AuthPageWrapper from '../../components/AuthPageWrapper/AuthPageWrapper';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import AuthPageFooter from '../../components/AuthPageFooter/AuthPageFooter';
@@ -36,6 +37,7 @@ export default function Register(): JSX.Element {
     <PageContainer>
       <AuthPageWrapper header="Sign up">
         <SignUpForm handleSubmit={handleSubmit} />
+        <DemoLogin />
         <AuthPageFooter text="Already a member?" anchorText="Login" anchorTo="/login" />
       </AuthPageWrapper>
     </PageContainer>
