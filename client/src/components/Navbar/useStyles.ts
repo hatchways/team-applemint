@@ -8,6 +8,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
     background: 'white',
   },
   transparentNavbar: {
+    position: 'absolute',
     boxShadow: 'none',
     background: 'none',
   },
@@ -18,6 +19,24 @@ export const useStyles = makeStyles((theme: Theme) => ({
     transition: 'color 120ms ease-in-out',
     '&:hover': {
       color: theme.palette.primary.main,
+    },
+  },
+  landingNavbarItem: {
+    color: theme.palette.primary.contrastText,
+    textTransform: 'uppercase',
+    fontWeight: 700,
+    transition: 'color 120ms ease-in-out',
+    '&:hover': {
+      color: theme.palette.grey[500],
+    },
+    '& Button': {
+      '&.MuiButton-outlined': {
+        color: theme.palette.primary.contrastText,
+        borderColor: theme.palette.primary.contrastText,
+        '&:hover': {
+          borderColor: theme.palette.primary.contrastText,
+        },
+      },
     },
   },
   navbarLogo: {
